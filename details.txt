@@ -1,0 +1,17 @@
+Deploying 'OurStorageDapp'
+--------------------------
+> transaction hash:    0xd80dfffc49770fd1e708f904d256ea5b6596bb8936778a2daf02c33edcf3f43c
+> Blocks: 1            Seconds: 13
+> contract address:    0x6071b20A6A97c47C3C2e8E6f03AEFEb49624197D
+> block number:        11244789
+> block timestamp:     1634461506
+> account:             0x659736f63e051FF09ED02bA816DdC553CDc11E2C
+> balance:             1.14801962899919156
+> gas used:            1157059 (0x11a7c3)
+> gas price:           25 gwei
+> value sent:          0 ETH
+> total cost:          0.028926475 ETH
+
+> Saving artifacts
+-------------------------------------
+> Total cost:         0.028926475 ETH
