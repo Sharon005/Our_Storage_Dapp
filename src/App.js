@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {
-  BrowserRouter as Router,
   Switch,
   Route,
   HashRouter
@@ -56,7 +55,6 @@ class App extends Component {
     const web3 = new Web3(window.ethereum);
 
     const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
-    const account = accounts[0];
     web3.eth.defaultAccount = accounts[0];
     this.setState({ account: accounts[0] })
 
@@ -82,7 +80,7 @@ class App extends Component {
 
     for (let i = totalFilesCount; i >= 1; i--) {
       let file = await this.state.ourStorageDapp.methods.getFileOf(i).call();
-      if (file.fileName != "0deleted_") {
+      if (file.fileName !== "0deleted_") {
         this.setState({
           allFiles: [...this.state.allFiles, file]
         })
